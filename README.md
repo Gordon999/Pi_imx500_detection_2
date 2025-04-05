@@ -1,4 +1,4 @@
-^# Pi_imx500_detection_2
+# Pi_imx500_detection_2
 
 Pi + Pi imx500 AI camera. Tested on Pi4 and Pi5.
 
