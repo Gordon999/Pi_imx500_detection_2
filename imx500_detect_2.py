@@ -778,6 +778,16 @@ if __name__ == "__main__":
                               if len(USB_Files) > 0:
                                   usedusb = os.statvfs(m_user + "/" + USB_Files[0] + "/")
                                   USB_storage = ((1 - (usedusb.f_bavail / usedusb.f_blocks)) * 100)
+                                  
+                        elif mousey > 100 and mousey < 300 and event.button != 3:
+                            #Show Video
+                            print(Pics[p])
+                            Videos = glob.glob(h_user + '/Videos/******_******.mp4')
+                            Videos.sort()
+                            pic = Pics[p].split("/")
+                            vid = "/"+ pic[1] + "/" + pic[2] + "/Videos/" + pic[4][:-4] + ".mp4"
+                            if os.path.exists(vid):
+                               os.system("vlc " + vid)
 
                         Videos = glob.glob(h_user + '/Videos/******_******.mp4')
                         Videos.sort()
