@@ -19,3 +19,5 @@ Videos saved to ram and then copied to /home/USERNAME/Videos
 stills saved to /home/USER/Pictures
 
 to run ... python3 imx500_detect_2.py
+
+left click on center of captured image to view video
